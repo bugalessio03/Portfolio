@@ -682,7 +682,7 @@ html, body, #root {
   .colonna-wip { flex-grow: 1 !important; display: flex !important; flex-direction: column !important; height: 350px !important; min-height: 350px !important; }
   .foto-centrata-wip { height: 100% !important; flex-grow: 1 !important; display: flex !important; align-items: center !important; justify-content: center !important;}
   .box-foto-reale { width: 100% !important; height: 100% !important; background-size: cover !important; background-position: center !important;}
-  .box-foto-reale p { transform: none !important; scale: 1 !important; font-size: 33px !important; font-family: 'Impact', sans-serif !important; margin: 0 !important; }
+  .box-foto-reale p { transform: none !important; scale: 1 !important; font-size: 20px !important; font-family: 'Impact', sans-serif !important; margin: 0 !important; }
 
   /* 🚀 Regole specifiche per la modale WIP anche su smartphone */
   .guscio-wip-immagine-schermata-70 {
