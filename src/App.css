@@ -31,7 +31,7 @@ html, body, #root {
 .fase-1 .sfondo-strato, .fase-2 .sfondo-strato, .fase-3 .sfondo-strato, .fase-4 .sfondo-strato, .fase-5 .sfondo-strato, .fase-6 .sfondo-strato { transform: scale(1.4); }
 
 .sfondo-principale {
-  background-image: url('public/Photo_Home.jpg');
+  background-image: url('../Photo_Home.jpg');
   z-index: 4; opacity: 1; filter: blur(0px);
 }
 .fase-2 .sfondo-principale, .fase-3 .sfondo-principale, .fase-4 .sfondo-principale, .fase-5 .sfondo-principale, .fase-6 .sfondo-principale { filter: blur(20px); opacity: 0; }
