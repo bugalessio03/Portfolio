@@ -6,7 +6,7 @@ export const cinematographyProjects = [
         role: "Director & Screenwriter",
         festival: "Docufiction",
         videoUrl: "https://youtu.be/NUCoPVbBMmo",
-        previewImg: "public/griglia_15.png"
+        previewImg: "/griglia_15.png"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const cinematographyProjects = [
         role: "3D Artist & Director",
         festival: "",
         videoUrl: "https://youtu.be/r9lw0jV9nvY",
-        previewImg: "public/Lost_Deer_Anteprima.png"
+        previewImg: "/Lost_Deer_Anteprima.png"
     },
     {
         id: 3,
@@ -24,6 +24,6 @@ export const cinematographyProjects = [
         role: "Director",
         festival: "Best Directing - Best Screenplay - 2024",
         videoUrl: "https://www.youtube.com/watch?v=09yL2t4y3J4&t=153s",
-        previewImg: "/public/LADEABENDATA_Anteprima.png"
+        previewImg: "/LADEABENDATA_Anteprima.png"
     },
 ];

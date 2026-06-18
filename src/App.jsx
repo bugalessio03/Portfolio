@@ -42,11 +42,11 @@ export default function App() {
   const aboutRowRef2 = useRef(null);
 
   const aboutImages = [
-    "public/griglia_1.jpg", "public/griglia_5.png", "public/griglia_10.png", "public/img.png",
-    "public/Lost_Deer_Anteprima.png", "public/griglia_6.png", "public/griglia_11.png", "public/griglia_17.png",
-    "public/griglia_3.jpg", "public/griglia_7.png", "public/griglia_12.png", "public/griglia_16.png",
-    "public/griglia_4.jpg", "public/griglia_8.png", "public/griglia_13.png", "public/griglia_15.png",
-    "public/griglia_9.png", "public/griglia_14.jpg",
+    "/griglia_1.jpg", "/griglia_5.png", "/griglia_10.png", "/img.png",
+    "/Lost_Deer_Anteprima.png", "/griglia_6.png", "/griglia_11.png", "/griglia_17.png",
+    "/griglia_3.jpg", "/griglia_7.png", "/griglia_12.png", "/griglia_16.png",
+    "/griglia_4.jpg", "/griglia_8.png", "/griglia_13.png", "/griglia_15.png",
+    "/griglia_9.png", "/griglia_14.jpg",
   ];
 
   // Generiamo una lista fissa di 150 note sparse casualmente per lo sfondo parallasse
@@ -66,12 +66,12 @@ export default function App() {
   // ==========================================================================
   const getReleaseImage = (release) => {
     if (release.type !== 'soundtrack') {
-      return release.mediaList ? release.mediaList[1] : (release.previewImg || 'public/Photo_Home.jpg');
+      return release.mediaList ? release.mediaList[1] : (release.previewImg || '/Photo_Home.jpg');
     }
     switch (release.album) {
-      case "Her": return "public/Her_Anteprima.jpg";
-      case "Liber Libertatis": return "public/Liber_Libertatis_Anteprima.png";
-      case "Pirate Journey": return "public/images/cover_pirate.jpg";
+      case "Her": return "/Her_Anteprima.jpg";
+      case "Liber Libertatis": return "/Liber_Libertatis_Anteprima.png";
+      case "Pirate Journey": return "/images/cover_pirate.jpg";
       default: return "/Photo_Home.jpg";
     }
   };
@@ -490,7 +490,7 @@ export default function App() {
                     {cinematographyProjects.map((proj) => (
                         <div key={proj.id} className="elemento-video-card" onClick={() => setActiveVideoProject(proj)}>
                           <div className="guscio-mini-anteprima-video">
-                            <img src={proj.previewImg || "public/Photo_Home.jpg"} alt="Preview"
+                            <img src={proj.previewImg || "/Photo_Home.jpg"} alt="Preview"
                                  className="immagine-anteprima-blur"/>
                             <div className="finto-tasto-play-centrato">▶</div>
                           </div>
@@ -571,7 +571,7 @@ export default function App() {
                           setActiveGameProject(game);
                           setMediaIndex(0);
                         }}>
-                          <img src={game.previewImg || "public/Photo_Home.jpg"} alt="Preview" className="game-thumb-immagine" />
+                          <img src={game.previewImg || "/Photo_Home.jpg"} alt="Preview" className="game-thumb-immagine" />
                           <div className="game-details" style={{ display: 'flex', alignItems: 'center' }}>
                             <h4 style={{ margin: 0 }}>{game.title}</h4>
                           </div>
@@ -599,13 +599,13 @@ export default function App() {
                       <p>LA DEA BENDATA - Award for best directing and best script</p>
                     </div>
                     <div className="blocco-about-card immagine-card-about"
-                         style={{backgroundImage: "url('public/LDB_screen_1.png')"}}></div>
+                         style={{backgroundImage: "url('/LDB_screen_1.png')"}}></div>
                     <div className="blocco-about-card testo-card-about">
                       <span className="badge-anno-about">MUSIC</span>
                       <p>Music composition for films and games</p>
                     </div>
                     <div className="blocco-about-card immagine-card-about"
-                         style={{backgroundImage: "url('public/KNOCKOUT_screen_1.jpg')"}}></div>
+                         style={{backgroundImage: "url('/KNOCKOUT_screen_1.jpg')"}}></div>
                   </div>
                 </div>
 
@@ -618,13 +618,13 @@ export default function App() {
                   </button>
                   <div className="riga-orizzontale-scroll-about" ref={aboutRowRef2}>
                     <div className="blocco-about-card immagine-card-about"
-                         style={{backgroundImage: "url('public/KNOCKOUT_screen_2.jpg')"}}></div>
+                         style={{backgroundImage: "url('/KNOCKOUT_screen_2.jpg')"}}></div>
                     <div className="blocco-about-card testo-card-about">
                       <span className="badge-anno-about">FILM</span>
                       <p>THE CILENIAN - Sergio Castro San Martin</p>
                     </div>
                     <div className="blocco-about-card immagine-card-about"
-                         style={{backgroundImage: "url('public/Screen_LCDS.png')"}}></div>
+                         style={{backgroundImage: "url('/Screen_LCDS.png')"}}></div>
                     <div className="blocco-about-card testo-card-about">
                       <span className="badge-anno-about">VIDEOMAKING</span>
                       <p>Restaurant - Wedding - Backstage</p>
