@@ -381,6 +381,14 @@ html, body, #root {
 .colonna-wip { justify-content: space-between; cursor: zoom-in; }
 .foto-centrata-wip { flex-grow: 1; display: flex; align-items: center; justify-content: center; }
 .box-foto-reale { width: 90%; height: 80%; background-color: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 0; display: flex; align-items: center; justify-content: center; color: #555; background-image: url('/KNOCKOUT_Anteprima.jpg'); background-size: cover; background-position: center; box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
+.testo-knockout {
+  color: red !important;
+  font-family: 'Impact', 'Anton', sans-serif !important; /* Aggiunto Anton come piano B se Impact fa i capricci sui telefoni */
+  font-size: 5rem !important; /* Grandezza per schermi grandi */
+  margin: 0 !important;
+  letter-spacing: 2px !important; /* Dà un tocco cinematografico spaziando un po' le lettere */
+  transform: none !important;
+}
 
 /* 🚀 NUOVO STILE: Regole per la modale estesa del WIP che copre il 70% dello schermo al click */
 .guscio-wip-fullscreen-overlay {
@@ -682,7 +690,9 @@ html, body, #root {
   .colonna-wip { flex-grow: 1 !important; display: flex !important; flex-direction: column !important; height: 350px !important; min-height: 350px !important; }
   .foto-centrata-wip { height: 100% !important; flex-grow: 1 !important; display: flex !important; align-items: center !important; justify-content: center !important;}
   .box-foto-reale { width: 100% !important; height: 100% !important; background-size: cover !important; background-position: center !important;}
-  .box-foto-reale p { transform: none !important; scale: 1 !important; font-size: 20px !important; font-family: 'Impact', sans-serif !important; margin: 0 !important; }
+  .testo-knockout {
+    font-size: 2.2rem !important; /* Perfetto per stare dentro lo schermo del telefono senza uscire dai bordi */
+  }
 
   /* 🚀 Regole specifiche per la modale WIP anche su smartphone */
   .guscio-wip-immagine-schermata-70 {

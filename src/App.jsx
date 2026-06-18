@@ -505,8 +505,9 @@ export default function App() {
                 <div className="scheda-chiara colonna-wip" onClick={() => setIsWipExpanded(true)}>
                   <h3>WORK IN PROGRESS</h3>
                   <div className="foto-centrata-wip">
-                    <div className="box-foto-reale"><p
-                        style={{scale: "5", color: "red", fontFamily: "impact"}}>KNOCKOUT</p></div>
+                    <div className="box-foto-reale">
+                      <p className="testo-knockout">KNOCKOUT</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -678,7 +679,9 @@ export default function App() {
           {/* 🚀 NUOVA MODALE: Work In Progress ingrandita al 70% cliccando ovunque per chiuderla */}
           <div className={`guscio-wip-fullscreen-overlay ${isWipExpanded ? 'attiva' : ''}`} onClick={() => setIsWipExpanded(false)}>
             <div className="guscio-wip-immagine-schermata-70" onClick={(e) => e.stopPropagation()}>
-              <div className="box-foto-reale"><p style={{scale: "7", color: "red", fontFamily: "impact"}}>KNOCKOUT</p></div>
+              <div className="box-foto-reale">
+                <p className="testo-knockout">KNOCKOUT</p>
+              </div>
               <button className="bottone-chiudi-wip-mobile" onClick={() => setIsWipExpanded(false)}>✕</button>
             </div>
           </div>
