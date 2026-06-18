@@ -335,7 +335,7 @@ export default function App() {
           <div className="sfondo-strato sfondo-principale"></div>
 
           {(phase === 2 || phase === 3) && (
-              <video src="public/Sezione_3_portfolio.mp4" autoPlay loop muted playsInline
+              <video src="../Sezione_3_portfolio.mp4" autoPlay loop muted playsInline
                      className="video-sfondo-cinematic-fase2"/>
           )}
 
