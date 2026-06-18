@@ -335,7 +335,7 @@ export default function App() {
           <div className="sfondo-strato sfondo-principale"></div>
 
           {(phase === 2 || phase === 3) && (
-              <video src="/Sezione_3_portfolio.mp4" autoPlay loop muted playsInline
+              <video src="public/Sezione_3_portfolio.mp4" autoPlay loop muted playsInline
                      className="video-sfondo-cinematic-fase2"/>
           )}
 
@@ -490,7 +490,7 @@ export default function App() {
                     {cinematographyProjects.map((proj) => (
                         <div key={proj.id} className="elemento-video-card" onClick={() => setActiveVideoProject(proj)}>
                           <div className="guscio-mini-anteprima-video">
-                            <img src={proj.previewImg || "public/Photo_Home.jpg"} alt="Preview"
+                            <img src={proj.previewImg || "/Photo_Home.jpg"} alt="Preview"
                                  className="immagine-anteprima-blur"/>
                             <div className="finto-tasto-play-centrato">▶</div>
                           </div>
