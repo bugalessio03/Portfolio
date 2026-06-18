@@ -72,7 +72,7 @@ export default function App() {
       case "Her": return "public/Her_Anteprima.jpg";
       case "Liber Libertatis": return "public/Liber_Libertatis_Anteprima.png";
       case "Pirate Journey": return "public/images/cover_pirate.jpg";
-      default: return "public/Photo_Home.jpg";
+      default: return "/Photo_Home.jpg";
     }
   };
 

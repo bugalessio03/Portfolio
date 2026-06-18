@@ -380,7 +380,7 @@ html, body, #root {
 
 .colonna-wip { justify-content: space-between; cursor: zoom-in; }
 .foto-centrata-wip { flex-grow: 1; display: flex; align-items: center; justify-content: center; }
-.box-foto-reale { width: 90%; height: 80%; background-color: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 0; display: flex; align-items: center; justify-content: center; color: #555; background-image: url('/KNOCKOUT_Anteprima.jpg'); background-size: cover; background-position: center; box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
+.box-foto-reale { width: 90%; height: 80%; background-color: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 0; display: flex; align-items: center; justify-content: center; color: #555; background-image: url('public/KNOCKOUT_Anteprima.jpg'); background-size: cover; background-position: center; box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
 
 /* 🚀 NUOVO STILE: Regole per la modale estesa del WIP che copre il 70% dello schermo al click */
 .guscio-wip-fullscreen-overlay {
