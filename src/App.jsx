@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { cinematographyProjects } from './CinematographyProjects';
 import { soundtracksProjects } from './SoundtracksProjects';
 import { gamesProjects } from './GamesProjects';
@@ -9,7 +9,7 @@ export default function App() {
   const [phase, setPhase] = useState(0);
   const [activeTrack, setActiveTrack] = useState(null);
 
-  // States for 80% expanded sub-sections
+  // States for 80% expanded subsections
   const [activeVideoProject, setActiveVideoProject] = useState(null);
   const [activeGameProject, setActiveGameProject] = useState(null);
   const [isWipExpanded, setIsWipExpanded] = useState(false); // 🚀 NUOVO: Stato per ingrandire la card Work in Progress
@@ -87,7 +87,7 @@ export default function App() {
 
   const getYouTubeEmbed = (url) => {
     if (!url) return '';
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);
     if (match && match[2].length === 11) {
       return `https://www.youtube.com/embed/${match[2]}?autoplay=1&mute=1`;
@@ -490,7 +490,7 @@ export default function App() {
                     {cinematographyProjects.map((proj) => (
                         <div key={proj.id} className="elemento-video-card" onClick={() => setActiveVideoProject(proj)}>
                           <div className="guscio-mini-anteprima-video">
-                            <img src={proj.previewImg || "/Photo_Home.jpg"} alt="Preview"
+                            <img src={proj.previewImg || "public/Photo_Home.jpg"} alt="Preview"
                                  className="immagine-anteprima-blur"/>
                             <div className="finto-tasto-play-centrato">▶</div>
                           </div>
